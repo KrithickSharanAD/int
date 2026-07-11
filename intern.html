@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudentBridge - Help & Support</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* Navbar */
+
+nav{
+    background:#020617;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* Header */
+
+.header{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.header h1{
+    font-size:50px;
+    color:#38bdf8;
+}
+
+.header p{
+    margin-top:15px;
+    color:#cbd5e1;
+}
+
+/* Support Cards */
+
+.support-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:20px 8%;
+}
+
+.card{
+    width:320px;
+    padding:25px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.15);
+}
+
+.card h2{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.8;
+}
+
+/* Contact Form */
+
+.contact{
+    max-width:700px;
+    margin:50px auto;
+    padding:35px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+}
+
+.contact h2{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:25px;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+.contact button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#38bdf8;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.contact button:hover{
+    background:#0ea5e9;
+}
+
+/* FAQ */
+
+.faq{
+    padding:60px 8%;
+}
+
+.faq h2{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:30px;
+}
+
+.faq-item{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:10px;
+}
+
+.faq-item h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+/* Footer */
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+footer p{
+    color:#cbd5e1;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">StudentBridge</div>
+
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">Companies & Rating</a></li>
+        <li><a href="#">Top Weekly</a></li>
+        <li><a href="contact & support.html">Contact & Support</a></li>
+        <li><a href="#">Register</a></li>
+    </ul>
+</nav>
+
+
+
+<section class="contact">
+
+    <h2>Send Us a Message</h2>
+    <form action="http://localhost/cgi-bin/query.py" method="'post">
+        Name:<input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="mail" placeholder="Your Email" required>
+
+        <textarea rows="5" name="query" placeholder="Type your query here..." required></textarea>
+
+        <button type="submit">Submit Query</button>
+    </form>
+
+</section>
+<section class="header">
+    <h1>Contact & Support</h1>
+    <p>We're here to help you with internships, placements, and career opportunities.</p>
+</section>
+
+<div class="support-container">
+
+    <div class="card">
+        <h2>📞 Contact Us</h2>
+        <p>
+        Contact:93458 13132<br>
+        Contact:87787 30833<br>
+        Email:support@studentbridge.com<br>
+        Available: Mon - Sat (10 AM - 7 PM)
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🎓 Placement Cell</h2>
+        <p>
+            Placement Officer<br>
+            StudentBridge Career Services<br>
+            Email: placement@studentbridge.com
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>💬 Quick Support</h2>
+        <p>
+            Get assistance regarding company details,
+            internship applications, placement drives,
+            and account-related issues.
+        </p>
+    </div>
+
+</div>
+
+<section class="faq">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <h3>How do I search for companies?</h3>
+        <p>Use the search feature on the homepage to find company details and opportunities.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>How often is company information updated?</h3>
+        <p>Company ratings, vacancies, and hiring details are updated regularly.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Can I view internship and placement opportunities?</h3>
+        <p>Yes, StudentBridge provides information about both internships and placement drives.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 StudentBridge | Bridging Students to Success</p>
+</footer>
+
+</body>
+</html>
