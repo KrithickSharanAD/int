@@ -34,7 +34,7 @@ A clean and simple weather application that fetches real-time weather data using
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/krithick/weather-app.git
+   git clone file:///C:/Users/krith/Downloads/Weather%20App.html
    ```
 2. Navigate into the project folder
    ```bash
